@@ -1,0 +1,5 @@
+#@!!::?))
+#include <istream>
+int s = ( 2 + 3 );
+s += 4;
+std::cout << s;

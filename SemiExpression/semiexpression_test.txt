@@ -1,0 +1,32 @@
+/* This is a C comment
+on two lines.*/
+#include <iosfwd>
+#include <string>
+
+class ConsumeState;
+
+class Toker : public ITokCollection
+{
+std::string s= "a string";
+
+public:
+  Toker();
+  void setSpecialCharPairs(std::string scp)
+  {
+    for (auto token : _tokens)
+      if (token != "\n")
+        std::cout << token << " ";
+	  
+    for (int i=0, *p = &i; i < 9; i+=2) 
+    {
+      std::cout << i << ':' << *p << ' ';
+    }
+
+    for (size_t i = 0; i < length(); ++i)
+      if (tok == _tokens[i])
+        return i;
+    return length();
+  }
+private:
+  ConsumeState* pConsumer;
+};

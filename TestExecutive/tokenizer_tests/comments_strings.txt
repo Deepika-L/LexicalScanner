@@ -1,0 +1,9 @@
+/*This is a C style comment
+on multiple lines.*/
+
+int main()
+{
+//This is a Cpp comment
+std::cout << "This is a \"quoted\" string";
+char c = '\n';
+}

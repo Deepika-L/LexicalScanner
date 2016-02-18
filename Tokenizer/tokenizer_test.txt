@@ -1,0 +1,16 @@
+#ifdef TOKENIZER_TEST
+/* This is a C comment
+on two lines.*/
+#include <string>
+
+int main()
+{
+  //This is a Cpp comment
+  int b[] = {1,2};
+  std::string s = "This is a \"quoted string\".";
+  char a = 'a';
+  int a=5;
+  a += 5;
+  std::cout << "This tests special char pairs.";
+}
+#endif
